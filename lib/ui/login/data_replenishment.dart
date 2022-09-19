@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
+import 'package:kopa_shop/ui/home/home_screen.dart';
 import 'package:kopa_shop/widgets/custom_textformfield.dart';
-
-import '../../constants/app_images.dart';
-import '../../constants/style.dart';
-import 'sign_app.dart';
+import 'package:kopa_shop/constants/app_images.dart';
+import 'package:kopa_shop/constants/style.dart';
 
 class Replenishment extends StatefulWidget {
   const Replenishment({Key? key}) : super(key: key);
@@ -30,7 +29,7 @@ class _ReplenishmentState extends State<Replenishment> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              padding: const EdgeInsets.symmetric(vertical: 5.0),
               child: Stack(
                 children: [
                   Center(
@@ -73,6 +72,7 @@ class _ReplenishmentState extends State<Replenishment> {
               padding: const EdgeInsets.only(
                 left: 25,
                 right: 25,
+                bottom: 10,
               ),
               child: GestureDetector(
                 onTap: () {
@@ -80,7 +80,7 @@ class _ReplenishmentState extends State<Replenishment> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const LoginInOne()));
+                            builder: (context) => const Home()));
                   }
                 },
                 child: Container(

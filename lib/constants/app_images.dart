@@ -5,6 +5,8 @@ class AppImages {
   static const String elips = "assets/ellipse.png";
   static const String facebook = "assets/facebook.png";
   static const String phone = "assets/phone.png";
-
+  static const String yellow = "assets/yellow.png";
+  static const String vector = "assets/vector.png";
+  static const String cross = "assets/cross.png";
 
 }

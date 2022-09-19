@@ -56,7 +56,8 @@ class _LoginScreenState extends State<LoginScreen> {
               Padding(
                 padding: const EdgeInsets.only(
                   left: 30,
-                  top: 50,
+                  top: 30,
+                  bottom: 10,
                 ),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -72,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 50, top: 50),
+                padding: const EdgeInsets.only(left: 50, top: 30, bottom: 10),
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(),
@@ -83,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed: () {}),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 50, top: 50),
+                padding: const EdgeInsets.only(left: 50, top: 30, bottom: 10),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     shape: const CircleBorder(),

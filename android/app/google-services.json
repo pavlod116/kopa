@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166478568358",
+    "project_id": "kopa-shop",
+    "storage_bucket": "kopa-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166478568358:android:fd2969039ebefedec54d67",
+        "android_client_info": {
+          "package_name": "com.example.kopa_shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166478568358-no9n7tfva6hhohumq24m4kvlopfcpgrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRKF0aFtmGs2YE1WixgS7Ax60fmvfjOvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166478568358-no9n7tfva6hhohumq24m4kvlopfcpgrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

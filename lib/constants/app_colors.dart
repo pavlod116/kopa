@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+
+import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color black = Color(0xFF000000);
@@ -9,6 +10,10 @@ class AppColors {
   static const Color google = Color(0xFFFF0000);
   static const Color textPrimary = Color(0xFFFFFFFF);
   static const Color buttonin = Color(0xFF0CCDE6);
+  static const Color navigatorbottom = Color(0xFF505051);
+  static const Color focus = Color(0xFF0CCDE6);
+  static const Color card = Color(0xFF343434);
+  static const Color cardprice = Color(0xFFFFD600);
 
 
 }

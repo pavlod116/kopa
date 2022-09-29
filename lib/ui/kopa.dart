@@ -1,14 +1,15 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:kopa_shop/ui/favorites/favorites.dart';
-import 'package:kopa_shop/ui/setting/setting.dart';
+import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/services/auth/auth.dart';
 import 'package:kopa_shop/ui/splash/splash_screen.dart';
 import 'package:kopa_shop/ui/splash/splash_view_model.dart';
 import 'package:provider/provider.dart';
 
-import 'archive/archive.dart';
 
-class KopaApp extends StatefulWidget {
-  const KopaApp({Key? key}) : super(key: key);
+class KopaApp extends BaseStatefulWidget {
+  const KopaApp({super.key});
+
 
   @override
   State<KopaApp> createState() => _KopaAppState();
@@ -20,13 +21,15 @@ class _KopaAppState extends State<KopaApp> {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => SplashProvider()),
+        Provider<FirebaseAuthMethods>(
+          create: (_) => FirebaseAuthMethods(FirebaseAuth.instance),
+        ),
+        StreamProvider(
+          create: (context) => context.read<FirebaseAuthMethods>().authState,
+          initialData: null,
+        ),
       ],
       child: MaterialApp(
-        routes: {
-          '/archive' : (context) => const Archive(),
-          '/favorite' : (context) => const Favorite(),
-          '/setting' : (context) => const Setting(),
-        },
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),

@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
-import 'package:kopa_shop/ui/login/data_replenishment.dart';
+import 'package:kopa_shop/constants/app_strings.dart';
+import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/constants/style.dart';
+import 'package:kopa_shop/services/auth/auth.dart';
+import 'package:kopa_shop/ui/home/home_screen.dart';
+import 'package:kopa_shop/ui/sing/data_replenishment.dart';
+import 'package:provider/provider.dart';
 
-import '../../constants/style.dart';
-
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class LoginScreen extends BaseStatefulWidget {
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -15,32 +19,37 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: AppColors.backgroud,
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 25),
+            padding: const EdgeInsets.only(top: 10),
             child: Image.asset(
               AppImages.logo,
               fit: BoxFit.cover,
+              width: 436,
+              height: 373,
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            padding: const EdgeInsets.only(top: 41, left: 83, right: 77.52),
             child: Stack(
               children: [
                 Center(
                   child: Image.asset(
                     AppImages.elips,
                     fit: BoxFit.fill,
+                    width: 214.48,
+                    height: 114.99,
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(40.0),
                   child: Center(
                       child: Text(
-                    'Вхід',
+                    AppStrings.btnIn,
                     style: styleT(
                       fTiny,
                       color: AppColors.textPrimary,
@@ -55,15 +64,15 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(
-                  left: 30,
-                  top: 30,
-                  bottom: 10,
+                  left: 47,
+                  top: 40,
+                  bottom: 54,
                 ),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     shape: const CircleBorder(),
                     padding: const EdgeInsets.all(15),
-                    primary: AppColors.phone,
+                    backgroundColor: AppColors.phone,
                   ),
                   child: Image.asset(AppImages.phone),
                   onPressed: () => Navigator.push(
@@ -73,26 +82,30 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 50, top: 30, bottom: 10),
+                padding: const EdgeInsets.only(left: 43, top: 40, bottom: 54),
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(),
+                      backgroundColor: AppColors.fasebook,
                       padding: const EdgeInsets.all(15),
-                      primary: AppColors.fasebook,
                     ),
                     child: Image.asset(AppImages.facebook),
                     onPressed: () {}),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 50, top: 30, bottom: 10),
+                padding: const EdgeInsets.only(left: 43, top: 40, bottom: 54),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     shape: const CircleBorder(),
+                    backgroundColor: AppColors.google,
                     padding: const EdgeInsets.all(15),
-                    primary: AppColors.google,
                   ),
                   child: Image.asset(AppImages.google),
-                  onPressed: () {},
+                  onPressed: () {
+                    context.read<FirebaseAuthMethods>().signInWithGoogle(context);
+                    Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context) => const Home()));
+                  },
                 ),
               ),
             ],

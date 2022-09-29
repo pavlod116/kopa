@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kopa_shop/enums/states/notifier_states.dart';
 
-import '../enums/states/notifier_states.dart';
 
 class BaseProvider with ChangeNotifier {
   NotifierState _state = NotifierState.initial;

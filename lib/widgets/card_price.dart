@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
+import 'package:kopa_shop/core/ui/widgets/base_stateless_widget.dart';
 
-class CardPrice extends StatelessWidget {
+class CardPrice extends BaseStatelessWidget {
   const CardPrice({
     Key? key,
   }) : super(key: key);

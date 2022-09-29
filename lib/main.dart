@@ -6,5 +6,5 @@ import 'package:kopa_shop/ui/kopa.dart';
 Future main()  async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const KopaApp());
+  runApp( const KopaApp());
 }

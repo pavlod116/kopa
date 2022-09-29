@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:kopa_shop/core/ui/widgets/base_stateless_widget.dart';
 
 import '../constants/app_colors.dart';
 
-class CustomTextFormField extends StatelessWidget {
+class CustomTextFormField extends BaseStatelessWidget {
    const CustomTextFormField({
-    Key? key,
+     Key? key,
     this.validator,
     this.labelText,
     this.onChanged,

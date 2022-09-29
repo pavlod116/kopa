@@ -24,6 +24,8 @@ TextStyle styleT(
 //Text sizes
 const double fTiny = 28;
 const double fbuttonin = 18;
+const double name = 22;
+
 
 //Text Weights
 const FontWeight kLight = FontWeight.w400;

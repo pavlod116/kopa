@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
+import 'package:kopa_shop/constants/app_strings.dart';
+import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/ui/home/home_screen.dart';
 import 'package:kopa_shop/widgets/custom_textformfield.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/style.dart';
 
-class Replenishment extends StatefulWidget {
-  const Replenishment({Key? key}) : super(key: key);
+class Replenishment extends BaseStatefulWidget {
+  const Replenishment({super.key});
 
   @override
   State<Replenishment> createState() => _ReplenishmentState();
@@ -14,6 +16,7 @@ class Replenishment extends StatefulWidget {
 
 class _ReplenishmentState extends State<Replenishment> {
   final _formKey = GlobalKey<FormState>();
+
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +45,7 @@ class _ReplenishmentState extends State<Replenishment> {
                     padding: const EdgeInsets.symmetric(vertical: 40),
                     child: Center(
                       child: Text(
-                        'Вхід',
+                        AppStrings.btnIn,
                         style: styleT(
                           fTiny,
                           color: AppColors.textPrimary,
@@ -59,9 +62,9 @@ class _ReplenishmentState extends State<Replenishment> {
               child: Form(
                 key: _formKey,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
-                 child:  CustomTextFormField(labelText: '+ 380', validator: (value){
+                 child:  CustomTextFormField(labelText: AppStrings.phone, validator: (value){
                    if(value == null || value.isEmpty){
-                     return 'Будь ласка, введіть номер';
+                     return AppStrings.validatorph;
                    }
                    return null;
                  }
@@ -80,7 +83,7 @@ class _ReplenishmentState extends State<Replenishment> {
                     Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Home()));
+                            builder: (context) =>  const Home()));
                   }
                 },
                 child: Container(
@@ -90,7 +93,7 @@ class _ReplenishmentState extends State<Replenishment> {
                       color: AppColors.buttonin),
                   child: Center(
                     child: Text(
-                      'Верифікувати ',
+                       AppStrings.verify,
                       style: styleT(
                         fbuttonin,
                         color: AppColors.textPrimary,
@@ -102,6 +105,7 @@ class _ReplenishmentState extends State<Replenishment> {
               ),
             ),
           ],
-        ));
+        ),
+    );
   }
 }

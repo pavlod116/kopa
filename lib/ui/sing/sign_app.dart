@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kopa_shop/constants/app_strings.dart';
+import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/ui/home/home_screen.dart';
 import 'package:kopa_shop/widgets/custom_textformfield.dart';
 
@@ -6,14 +8,16 @@ import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/style.dart';
 
-class LoginInOne extends StatefulWidget {
-  const LoginInOne({Key? key}) : super(key: key);
+class SignScreen extends BaseStatefulWidget {
+  const SignScreen({super.key});
+
+
 
   @override
-  State<LoginInOne> createState() => _LoginInOneState();
+  State<SignScreen> createState() => _LoginInOneState();
 }
 
-class _LoginInOneState extends State<LoginInOne> {
+class _LoginInOneState extends State<SignScreen> {
   final _formKeyOne = GlobalKey<FormState>();
 
   @override
@@ -38,7 +42,7 @@ class _LoginInOneState extends State<LoginInOne> {
                     padding: const EdgeInsets.symmetric(vertical: 40),
                     child: Center(
                       child: Text(
-                        'Вхід',
+                        AppStrings.btnIn,
                         style: styleT(
                           fTiny,
                           color: AppColors.textPrimary,
@@ -53,20 +57,20 @@ class _LoginInOneState extends State<LoginInOne> {
             Padding(
                 padding: const EdgeInsets.only(top: 15, left: 25, right: 25),
                 child: CustomTextFormField(
-                    labelText: "Ім'я",
+                    labelText: AppStrings.name,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return "Будь ласка, введіть ім'я";
+                        return AppStrings.validator;
                       }
                       return null;
                     })),
             Padding(
               padding: const EdgeInsets.only(top: 15, left: 25, right: 25),
               child: CustomTextFormField(
-                  labelText: 'Прізвище',
+                  labelText: AppStrings.surname,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return "Будь ласка, введіть прізвище";
+                      return AppStrings.validatorsur;
                     }
                     return null;
                   }),
@@ -74,10 +78,10 @@ class _LoginInOneState extends State<LoginInOne> {
             Padding(
               padding: const EdgeInsets.only(top: 15, left: 25, right: 25),
               child: CustomTextFormField(
-                  labelText: 'Місто',
+                  labelText: AppStrings.city,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return "Будь ласка, введіть місто";
+                      return AppStrings.validatorcity;
                     }
                     return null;
                   }),
@@ -89,7 +93,7 @@ class _LoginInOneState extends State<LoginInOne> {
                 onTap: () {
                   if (_formKeyOne.currentState!.validate()) {
                     Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => const Home()));
+                        MaterialPageRoute(builder: (context) =>  const Home()));
                   }
                 },
                 child: Container(
@@ -99,7 +103,7 @@ class _LoginInOneState extends State<LoginInOne> {
                       color: AppColors.buttonin),
                   child: Center(
                     child: Text(
-                      'Готово ',
+                      AppStrings.done,
                       style: styleT(
                         fbuttonin,
                         color: AppColors.textPrimary,

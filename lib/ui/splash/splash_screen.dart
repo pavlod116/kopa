@@ -24,10 +24,16 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        color: AppColors.backgroud,
-        child: Image.asset(
-          AppImages.logo,
-        ));
+    return ConstrainedBox(
+      constraints: const BoxConstraints(
+        minHeight: 373,
+        minWidth: 436,
+      ),
+      child: Container(
+          color: AppColors.backgroud,
+          child: Image.asset(
+            AppImages.logo,
+          )),
+    );
   }
 }

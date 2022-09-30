@@ -9,9 +9,12 @@ class CardPrice extends BaseStatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: 75,
-        height: 30,
+    return ConstrainedBox(
+      constraints: const BoxConstraints(
+        minWidth: 75,
+        minHeight: 30,
+      ),
+      child: Container(
         decoration: BoxDecoration(
           color: AppColors.cardprice,
           borderRadius: BorderRadius.circular(10),
@@ -26,6 +29,7 @@ class CardPrice extends BaseStatelessWidget {
             ),
           ),
         ),
-      );
+      ),
+    );
   }
 }

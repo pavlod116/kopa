@@ -41,130 +41,154 @@ class _CustomCardState extends State<CustomCard> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(right: 170),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 208,
+                          minHeight: 139
                         ),
-                        child: Image.asset(
-                          AppImages.cross,
-                          fit: BoxFit.cover,
-                          width: 208,
-                          height: 139,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: Image.asset(
+                            AppImages.cross,
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(right: 11, top: 1),
-                      child: IconButton(
-                        iconSize: 24.13,
-                        icon: Icon(
-                          Icons.favorite,
-                          color: Colors.white,
+                     Padding(
+                      padding: const EdgeInsets.only(right: 11, top: 1),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 24.13,
+                          minHeight: 22.2
                         ),
-                        onPressed: null,
+                        child: const IconButton(
+                          icon: Icon(
+                            Icons.favorite,
+                            color: Colors.white,
+                          ),
+                          onPressed: null,
+                        ),
                       ),
                     ),
                     const Padding(
                         padding: EdgeInsets.only(left: 260, top: 10),
                         child: CardPrice()),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 151, top: 10),
-                      child: SizedBox(
-                        width: 73.91,
-                        height: 18.4,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 151, top: 10),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 73.91,
+                            minHeight: 18.4,
+                        ),
+
+                        child: const Text(
                           AppStrings.nike,
                           style: TextStyle(fontSize: 16, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 151, top: 37),
-                      child: SizedBox(
-                        width: 72,
-                        height: 11.5,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 151, top: 37),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 72,
+                          minHeight: 11.5,
+                        ),
+                        child: const Text(
                           AppStrings.foot,
                           style: TextStyle(fontSize: 10, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 151, top: 52),
-                      child: SizedBox(
-                        width: 28,
-                        height: 25.3,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 151, top: 52),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 28,
+                          minHeight: 25.3,
+                        ),
+                        child: const Text(
                           AppStrings.width,
                           style: TextStyle(fontSize: 22, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 197, top: 57),
-                      child: SizedBox(
-                        width: 46,
-                        height: 16,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 197, top: 57),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 46,
+                          minHeight: 16,
+                        ),
+                        child: const Text(
                           AppStrings.length,
                           style: TextStyle(fontSize: 14, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 180, top: 80),
-                      child: SizedBox(
-                        width: 68,
-                        height: 16.1,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 180, top: 80),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 68,
+                          minHeight: 16.1
+                        ),
+                        child: const Text(
                           AppStrings.lengthsm,
                           style: TextStyle(fontSize: 10, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 280, top: 57),
-                      child: SizedBox(
-                        width: 28,
-                        height: 16.1,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 280, top: 57),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 28,
+                          minHeight: 16.1
+                        ),
+                        child: const Text(
                           AppStrings.size,
                           style: TextStyle(fontSize: 14, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 253, top: 81),
-                      child: SizedBox(
-                        width: 65,
-                        height: 11.5,
-                        child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 253, top: 81),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 65,
+                          minHeight: 11.5,
+                        ),
+                        child: const Text(
                           AppStrings.widthsm,
                           style: TextStyle(fontSize: 10, color: Colors.white),
                         ),
                       ),
                     ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 158, top: 82),
-                      child: SizedBox(
-                        width: 46,
-                        height: 11.5,
-                        child: SizedBox(
-                          width: 46,
-                          height: 11.5,
-                          child: Text(
+                     Padding(
+                      padding: const EdgeInsets.only(left: 158, top: 82),
+                      child: ConstrainedBox(
+                         constraints: const BoxConstraints(
+                           minWidth: 46,
+                           minHeight: 11.5
+                         ),
+                          child: const Text(
                             AppStrings.eu,
                             style: TextStyle(fontSize: 10, color: Colors.white,),
                           ),
                         ),
                       ),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.only(left: 151, top: 103),
-                      child: SizedBox(
-                        width: 139,
-                        height: 11.5,
-                        child: Text(
+                    Padding(
+                      padding: const EdgeInsets.only(left: 151, top: 103),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          minWidth: 139,
+                          minHeight: 11.5
+                        ),
+                        child: const Text(
                           AppStrings.material,
                           style: TextStyle(fontSize: 10, color: Colors.white),
                         ),

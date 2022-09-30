@@ -27,9 +27,11 @@ class _SettingState extends State<Setting> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 61, left:31),
-                  child: SizedBox(
-                    height: 91,
-                    width: 91,
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      minWidth: 91,
+                      minHeight: 91,
+                    ),
                     child: Image.asset(
                       AppImages.user,
                       fit: BoxFit.cover,
@@ -91,18 +93,23 @@ class _SettingState extends State<Setting> {
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => const LoginScreen()));
             },
-            child: Container(
-              height: 40,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: AppColors.buttonin),
-              child: Center(
-                child: Text(
-                  AppStrings.exit,
-                  style: styleT(
-                    fbuttonin,
-                    color: AppColors.textPrimary,
-                    fWeight: kLight,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(
+                minWidth: 283,
+                minHeight: 34
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: AppColors.buttonin),
+                child: Center(
+                  child: Text(
+                    AppStrings.exit,
+                    style: styleT(
+                      fbuttonin,
+                      color: AppColors.textPrimary,
+                      fWeight: kLight,
+                    ),
                   ),
                 ),
               ),

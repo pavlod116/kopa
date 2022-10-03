@@ -20,14 +20,10 @@ class AppStrings {
   static const String verify = "Верифікувати";
   static const String exit = "Вийти";
   static const String eu = "EU";
-
-
-
-
-
-
-
-
+  static const String description =
+      "Опис про товар і як довго носив кросівки чи специфічні деталі взуття. натирало чи ні. чи дуло задувало. на широку ногу чи сайз не відповідає зязвленому. хвалиш взуття щоб точно купили. бо подарували дві пари, а ти за літо ще ні одної не зносив.";
+  static const String seller = "Продавець";
+  static const String situ = "Ukraine, Vinnytsia";
 
 
 }

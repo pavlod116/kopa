@@ -4,12 +4,8 @@ import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/app_strings.dart';
 import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/constants/style.dart';
-import 'package:kopa_shop/services/auth/auth.dart';
-
 import 'package:kopa_shop/ui/auth/auth_view.dart';
-import 'package:kopa_shop/ui/home/home_screen.dart';
 import 'package:kopa_shop/ui/sing/data_replenishment.dart';
-import 'package:provider/provider.dart';
 
 class LoginScreen extends BaseStatefulWidget {
   const LoginScreen({super.key});

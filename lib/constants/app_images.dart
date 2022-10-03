@@ -9,6 +9,10 @@ class AppImages {
   static const String vector = "assets/vector.png";
   static const String cross = "assets/cross.png";
   static const String user = "assets/user.png";
+  static const String worker = "assets/worker.png";
+  static const String backwards = "assets/backwards.png";
+
+
 
 
 }

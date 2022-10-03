@@ -1,3 +1,5 @@
+library flutter_localizations;
+
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
@@ -34,40 +36,58 @@ class _EditState extends State<EditPage> {
                     child: Center(
                       child: ListView(
                         children: <Widget>[
-                          ConstrainedBox(
+                          Padding(
+                            padding: const EdgeInsets.only(left: 32, top: 52),
+                            child: ConstrainedBox(
                               constraints: const BoxConstraints(
                                 minWidth: 97,
                                 minHeight: 16,
                               ),
-                              child: const Text('Модель')),
+                              child: const Text(
+                                'Модель',
+                                style: TextStyle(
+                                    color: AppColors.white, fontSize: 14),
+                              ),
+                            ),
+                          ),
+                          const Padding(
+                            padding:
+                                EdgeInsets.only(left: 17, right: 16, top: 21),
+                            child: TextField(
+                              style: TextStyle(color: AppColors.white),
+                              decoration: InputDecoration(
+                                hintStyle: TextStyle(color: AppColors.white),
+                                enabledBorder: UnderlineInputBorder(
+                                    borderSide:
+                                        BorderSide(color: AppColors.border)),
+                                focusedBorder: UnderlineInputBorder(
+                                    borderSide:
+                                        BorderSide(color: AppColors.white)),
+                                focusColor: AppColors.white,
+                                labelStyle: TextStyle(
+                                  color: AppColors.white,
+                                ),
+                              ),
+                              cursorColor: AppColors.textPrimary,
+                            ),
+                          ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 17, right: 16, top: 109),
+                            padding: const EdgeInsets.only(left: 32, top: 52),
                             child: ConstrainedBox(
                               constraints: const BoxConstraints(
-                                minWidth: 342,
+                                minWidth: 97,
+                                minHeight: 16,
                               ),
-                              child: const TextField(
-                                style: TextStyle(color: AppColors.white),
-                                decoration: InputDecoration(
-                                  hintStyle: TextStyle(color: AppColors.white),
-                                  enabledBorder: UnderlineInputBorder(
-                                      borderSide:
-                                          BorderSide(color: AppColors.border)),
-                                  focusedBorder: UnderlineInputBorder(
-                                      borderSide:
-                                          BorderSide(color: AppColors.white)),
-                                  focusColor: AppColors.white,
-                                  labelText: 'Модель',
-                                  labelStyle: TextStyle(
-                                    color: AppColors.white,
-                                  ),
-                                ),
-                                cursorColor: AppColors.textPrimary,
+                              child: const Text(
+                                'Матеріал',
+                                style: TextStyle(
+                                    color: AppColors.white, fontSize: 14),
                               ),
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 17, right: 16, top: 74),
+                            padding: const EdgeInsets.only(
+                                left: 17, right: 16, top: 21),
                             child: ConstrainedBox(
                               constraints: const BoxConstraints(
                                 minHeight: 1,
@@ -84,7 +104,6 @@ class _EditState extends State<EditPage> {
                                       borderSide:
                                           BorderSide(color: AppColors.white)),
                                   focusColor: AppColors.white,
-                                  labelText: 'Матеріал',
                                   labelStyle: TextStyle(
                                     color: AppColors.white,
                                   ),
@@ -93,72 +112,177 @@ class _EditState extends State<EditPage> {
                               ),
                             ),
                           ),
-                          Stack(children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 17, right: 260),
-                              child: ConstrainedBox(
-                                constraints: const BoxConstraints(
-                                  minHeight: 1,
-                                  minWidth: 98,
-                                ),
-                                child: const TextField(
-                                  style: TextStyle(color: AppColors.white),
-                                  decoration: InputDecoration(
-                                    hintStyle:
-                                        TextStyle(color: AppColors.white),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                            color: AppColors.border)),
-                                    focusedBorder: UnderlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: AppColors.white)),
-                                    focusColor: AppColors.white,
-                                    labelText: 'Розмір',
-                                    labelStyle: TextStyle(
-                                      color: AppColors.white,
-                                    ),
-                                  ),
-                                  cursorColor: AppColors.textPrimary,
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding:
-                              const EdgeInsets.only(left: 135, right: 142),
-                              child: ConstrainedBox(
-                                constraints: const BoxConstraints(
-                                  minHeight: 1,
-                                  minWidth: 98,
-                                ),
-                                child: const TextField(
-                                  style: TextStyle(color: AppColors.white),
-                                  decoration: InputDecoration(
-                                    hintStyle: TextStyle(color: AppColors.white),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide:
-                                        BorderSide(color: AppColors.border)),
-                                    focusedBorder: UnderlineInputBorder(
-                                        borderSide:
-                                        BorderSide(color: AppColors.white)),
-                                    focusColor: AppColors.white,
-                                    labelStyle: TextStyle(
-                                      color: AppColors.white,
-                                    ),
-                                  ),
-                                  cursorColor: AppColors.textPrimary,
-                                ),
-                              ),
-                            ),
-                          ],),
-
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: ElevatedButton(
-                              child: const Text('Close BottomSheet'),
-                              onPressed: () => Navigator.pop(context),
+                            padding: const EdgeInsets.only(left: 32, top: 52),
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(
+                                minWidth: 97,
+                                minHeight: 16,
+                              ),
+                              child: const Text(
+                                'Розмір',
+                                style: TextStyle(
+                                    color: AppColors.white, fontSize: 14),
+                              ),
                             ),
                           ),
+                          Stack(
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(left: 17, right: 260),
+                                child: ConstrainedBox(
+                                  constraints: const BoxConstraints(
+                                    minHeight: 1,
+                                    minWidth: 98,
+                                  ),
+                                  child: const TextField(
+                                    style: TextStyle(color: AppColors.white),
+                                    decoration: InputDecoration(
+                                      hintStyle:
+                                          TextStyle(color: AppColors.white),
+                                      enabledBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.border)),
+                                      focusedBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.white)),
+                                      focusColor: AppColors.white,
+                                      labelStyle: TextStyle(
+                                        color: AppColors.white,
+                                      ),
+                                    ),
+                                    cursorColor: AppColors.textPrimary,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 135, right: 142),
+                                child: ConstrainedBox(
+                                  constraints: const BoxConstraints(
+                                    minHeight: 1,
+                                    minWidth: 98,
+                                  ),
+                                  child: const TextField(
+                                    style: TextStyle(color: AppColors.white),
+                                    decoration: InputDecoration(
+                                      hintStyle:
+                                          TextStyle(color: AppColors.white),
+                                      enabledBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.border)),
+                                      focusedBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.white)),
+                                      focusColor: AppColors.white,
+                                      labelStyle: TextStyle(
+                                        color: AppColors.white,
+                                      ),
+                                    ),
+                                    cursorColor: AppColors.textPrimary,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 32, top: 52),
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(
+                                minWidth: 97,
+                                minHeight: 16,
+                              ),
+                              child: const Text(
+                                'Ціна',
+                                style: TextStyle(
+                                    color: AppColors.white, fontSize: 14),
+                              ),
+                            ),
+                          ),
+                          Stack(
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(left: 17, right: 260),
+                                child: ConstrainedBox(
+                                  constraints: const BoxConstraints(
+                                    minHeight: 1,
+                                    minWidth: 98,
+                                  ),
+                                  child: const TextField(
+                                    style: TextStyle(color: AppColors.white),
+                                    decoration: InputDecoration(
+                                      hintStyle:
+                                          TextStyle(color: AppColors.white),
+                                      enabledBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.border)),
+                                      focusedBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.white)),
+                                      focusColor: AppColors.white,
+                                      labelStyle: TextStyle(
+                                        color: AppColors.white,
+                                      ),
+                                    ),
+                                    cursorColor: AppColors.textPrimary,
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                    left: 135, right: 142),
+                                child: ConstrainedBox(
+                                  constraints: const BoxConstraints(
+                                    minHeight: 1,
+                                    minWidth: 98,
+                                  ),
+                                  child: const TextField(
+                                    style: TextStyle(color: AppColors.white),
+                                    decoration: InputDecoration(
+                                      hintStyle:
+                                          TextStyle(color: AppColors.white),
+                                      enabledBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.border)),
+                                      focusedBorder: UnderlineInputBorder(
+                                          borderSide: BorderSide(
+                                              color: AppColors.white)),
+                                      focusColor: AppColors.white,
+                                      labelStyle: TextStyle(
+                                        color: AppColors.white,
+                                      ),
+                                    ),
+                                    cursorColor: AppColors.textPrimary,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          Stack(
+                            children: [Padding(
+                              padding: const EdgeInsets.only(left: 166, top: 10),
+                              child: TextButton(
+                                style: TextButton.styleFrom(
+                                  textStyle: const TextStyle(fontSize: 20),
+                                ),
+                                onPressed: () => Navigator.pop(context),
+                                child: const Text('СКИНУТИ', style: TextStyle(fontSize: 13, color: AppColors.focus),),
+                              ),
+                            ),
+
+                          Padding(
+                            padding: const EdgeInsets.only(left: 250, top: 10),
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                textStyle: const TextStyle(fontSize: 20),
+                              ),
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text('ЗАСТОСУВАТИ', style: TextStyle(fontSize: 13, color: AppColors.focus),),
+                            ),
+                          ),
+                ]),
                         ],
                       ),
                     ),

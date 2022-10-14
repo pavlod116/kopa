@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/ui/bottom_bar/bottom_notifier.dart';
+import 'package:kopa_shop/ui/create_product_screen/create_product_page.dart';
 import 'package:kopa_shop/ui/setting_screen/setting_page.dart';
 import 'package:kopa_shop/widgets/custom_card.dart';
 import 'package:provider/provider.dart';
@@ -11,9 +12,7 @@ class Home extends BaseStatefulWidget {
   const Home({super.key});
 
   @override
-  State<StatefulWidget> createState() {
-    return _HomeState();
-  }
+  State<StatefulWidget> createState() => _HomeState();
 }
 
 @override
@@ -21,9 +20,9 @@ State<Home> createState() => _HomeState();
 
 class _HomeState extends State<Home> {
   static final List<Widget> _children = <Widget>[
-    const CustomCard(),
+     const CustomCard(),
     const Center(child: Text('')),
-    const Center(child: Text('asf')),
+    const CreateProductPage(),
     const Center(child: Text('fjf')),
     const Center(child: Setting()),
   ];
@@ -65,7 +64,7 @@ class _HomeState extends State<Home> {
                           Provider.of<BottomNotifier>(context).childIndex == 2
                               ? AppColors.focus
                               : AppColors.unfocus),
-                  label: 'Add'),
+                  label: ' '),
               BottomNavigationBarItem(
                   icon: Icon(Icons.favorite,
                       color:

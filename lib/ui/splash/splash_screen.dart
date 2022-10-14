@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/ui/splash/splash_view_model.dart';
 import 'package:provider/provider.dart';
 

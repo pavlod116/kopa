@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateless_widget.dart';
-
+import 'package:kopa_shop/core/widgets/base_stateless_widget.dart';
 import '../constants/app_colors.dart';
 
 class CustomTextFormField extends BaseStatelessWidget {
-   const CustomTextFormField({
-     Key? key,
+  const CustomTextFormField({
+    Key? key,
     this.validator,
     this.labelText,
     this.onChanged,
@@ -23,7 +22,7 @@ class CustomTextFormField extends BaseStatelessWidget {
       style: const TextStyle(color: Colors.white),
       onChanged: onChanged,
       cursorColor: AppColors.textPrimary,
-      decoration:  InputDecoration(
+      decoration: InputDecoration(
         border: const OutlineInputBorder(),
         enabledBorder: const OutlineInputBorder(
           borderRadius: BorderRadius.all(

@@ -1,15 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/services/auth/auth.dart';
 import 'package:kopa_shop/ui/splash/splash_screen.dart';
 import 'package:kopa_shop/ui/splash/splash_view_model.dart';
 import 'package:provider/provider.dart';
 
-
 class KopaApp extends BaseStatefulWidget {
   const KopaApp({super.key});
-
 
   @override
   State<KopaApp> createState() => _KopaAppState();

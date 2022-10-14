@@ -4,7 +4,7 @@ import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/app_strings.dart';
 import 'package:kopa_shop/constants/style.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/services/auth/auth.dart';
 import 'package:kopa_shop/ui/login_screen/login_screen.dart';
 import 'package:provider/provider.dart';
@@ -58,7 +58,7 @@ class _SettingState extends State<Setting> {
                   borderSide: BorderSide(color: AppColors.border)),
               focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: AppColors.white)),
-              labelText: 'Контактний номер',
+              labelText: AppStrings.contact,
               labelStyle: TextStyle(
                 color: AppColors.white,
               ),
@@ -77,7 +77,7 @@ class _SettingState extends State<Setting> {
               focusedBorder: UnderlineInputBorder(
                   borderSide: BorderSide(color: AppColors.white)),
               focusColor: AppColors.white,
-              labelText: 'Місто',
+              labelText: AppStrings.city,
               labelStyle: TextStyle(
                 color: AppColors.white,
               ),

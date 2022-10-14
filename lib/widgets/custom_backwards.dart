@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_images.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
 import 'package:kopa_shop/ui/home/home_screen.dart';
 
 class Backwards extends BaseStatefulWidget {

@@ -1,5 +1,5 @@
 class AppStrings {
-  static const String btnIn = "Вхід";
+  static const String btnIn = "Вхiд";
   static const String name = "Ім'я";
   static const String validator = "Будь ласка, введіть ім'я";
   static const String surname = "Прізвище";
@@ -14,7 +14,7 @@ class AppStrings {
   static const String lengthsm = "Довжина / см";
   static const String size = "10";
   static const String widthsm = "Ширина / см";
-  static const String material = "Матеріал: Шкіра";
+  static const String materialle = "Матеріал: Шкіра";
   static const String phone = "+ 380";
   static const String validatorph = "Будь ласка, введіть номер";
   static const String verify = "Верифікувати";
@@ -24,6 +24,14 @@ class AppStrings {
       "Опис про товар і як довго носив кросівки чи специфічні деталі взуття. натирало чи ні. чи дуло задувало. на широку ногу чи сайз не відповідає зязвленому. хвалиш взуття щоб точно купили. бо подарували дві пари, а ти за літо ще ні одної не зносив.";
   static const String seller = "Продавець";
   static const String situ = "Ukraine, Vinnytsia";
-
-
+  static const String save = "Зберегти";
+  static const String sizest = "Розмір";
+  static const String material = "Матеріал";
+  static const String price = "Ціна";
+  static const String addphoto = "Додати фото";
+  static const String model = "Модель";
+  static const String opus = "Опис";
+  static const String download = "СКИНУТИ";
+  static const String sustained = "ЗАСТОСУВАТИ";
+  static const String contact = "Контактний номер";
 }

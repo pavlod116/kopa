@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/app_strings.dart';
-import 'package:kopa_shop/core/ui/widgets/base_stateless_widget.dart';
+import 'package:kopa_shop/core/widgets/base_stateless_widget.dart';
 import 'package:kopa_shop/widgets/card_price.dart';
 import 'package:kopa_shop/widgets/custom_backwards.dart';
+import 'package:kopa_shop/widgets/phone_button.dart';
 
 class CardPage extends BaseStatelessWidget {
   const CardPage({Key? key}) : super(key: key);
@@ -17,7 +18,6 @@ class CardPage extends BaseStatelessWidget {
         children: [
           Stack(
             children: [
-
               Padding(
                 padding: const EdgeInsets.only(top: 400),
                 child: ConstrainedBox(
@@ -124,18 +124,18 @@ class CardPage extends BaseStatelessWidget {
                         ),
                         const Padding(
                           padding:
-                          EdgeInsets.only(left: 11, right: 255, top: 16),
+                              EdgeInsets.only(left: 11, right: 255, top: 16),
                           child: Text(
-                            AppStrings.material,
+                            AppStrings.materialle,
                             style: TextStyle(
                               fontSize: 10,
                               color: AppColors.unfocus,
                             ),
                           ),
                         ),
-                         Padding(
-                          padding:
-                          const EdgeInsets.only(left: 15, right: 17, top: 16),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 15, right: 17, top: 16),
                           child: ConstrainedBox(
                             constraints: const BoxConstraints(
                               minWidth: 344,
@@ -155,7 +155,6 @@ class CardPage extends BaseStatelessWidget {
                   ),
                 ),
               ),
-
               Padding(
                 padding: const EdgeInsets.only(
                   top: 28,
@@ -168,9 +167,10 @@ class CardPage extends BaseStatelessWidget {
                   child: Container(
                     decoration: BoxDecoration(
                         image: const DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage(AppImages.cross, )
-                        ),
+                            fit: BoxFit.cover,
+                            image: AssetImage(
+                              AppImages.cross,
+                            )),
                         borderRadius: BorderRadius.circular(50)),
                   ),
                 ),
@@ -184,7 +184,7 @@ class CardPage extends BaseStatelessWidget {
           Row(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 35, left:16, bottom: 33),
+                padding: const EdgeInsets.only(top: 35, left: 16, bottom: 33),
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(
                     minWidth: 61,
@@ -196,11 +196,12 @@ class CardPage extends BaseStatelessWidget {
                   ),
                 ),
               ),
-               Column(
-                 children: const [
-                   Padding(
-                    padding:
-                    EdgeInsets.only(left: 13,  ),
+              Column(
+                children: const [
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 13,
+                    ),
                     child: Text(
                       AppStrings.seller,
                       style: TextStyle(
@@ -208,43 +209,20 @@ class CardPage extends BaseStatelessWidget {
                         color: AppColors.white,
                       ),
                     ),
-              ),
-                   Padding(
-                     padding:
-                     EdgeInsets.only(right: 20),
-                     child: Text(
-                       AppStrings.situ,
-                       style: TextStyle(
-                         fontSize: 10,
-                         color: AppColors.white,
-                       ),
-                     ),
-                   ),
-                 ],
-               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 38),
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(
-                    minWidth: 65,
-                    minHeight: 65,
                   ),
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.all(15),
-                      backgroundColor: AppColors.sellerph,
+                  Padding(
+                    padding: EdgeInsets.only(right: 20),
+                    child: Text(
+                      AppStrings.situ,
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: AppColors.white,
+                      ),
                     ),
-                    child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                          minWidth: 28,
-                          minHeight: 28,
-                        ),
-                        child: Image.asset(AppImages.phone, color: AppColors.black,)),
-                    // ignore: avoid_returning_null_for_void
-                    onPressed: () => null
                   ),
-                ),
+                ],
               ),
+              const PhoneButton(),
             ],
           ),
         ],

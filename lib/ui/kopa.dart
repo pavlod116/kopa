@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/providers/home_provider.dart';
+import 'package:kopa_shop/providers/main_tab_provider.dart';
 import 'package:kopa_shop/services/auth/auth.dart';
 import 'package:kopa_shop/ui/splash/splash_screen.dart';
 import 'package:kopa_shop/ui/splash/splash_view_model.dart';
@@ -18,6 +20,8 @@ class _KopaAppState extends State<KopaApp> {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        ChangeNotifierProvider(create: (_) => HomeProvider()),
+        ChangeNotifierProvider(create: (_) => MainTabViewModel()),
         ChangeNotifierProvider(create: (_) => SplashProvider()),
         Provider<FirebaseAuthMethods>(
           create: (_) => FirebaseAuthMethods(FirebaseAuth.instance),

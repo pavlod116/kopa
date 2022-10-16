@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_strings.dart';
 import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
-import 'package:kopa_shop/ui/home/home_screen.dart';
+import 'package:kopa_shop/ui/main_tabs/home/home_screen.dart';
 import 'package:kopa_shop/widgets/custom_textformfield.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/style.dart';

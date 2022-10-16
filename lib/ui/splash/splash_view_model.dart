@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/enums/states/notifier_states.dart';
-import 'package:kopa_shop/providers/base_provider.dart';
-import 'package:kopa_shop/ui/home/home_screen.dart';
+import 'package:kopa_shop/core/base_provider.dart';
 import 'package:kopa_shop/ui/login_screen/login_screen.dart';
+import 'package:kopa_shop/ui/main_tabs/main_tab.dart';
 
 class SplashProvider extends BaseProvider {
   final auth = FirebaseAuth.instance;
@@ -17,7 +17,7 @@ class SplashProvider extends BaseProvider {
           ? Navigator.pushReplacement(context,
           MaterialPageRoute(builder: (context) => const LoginScreen()))
           : Navigator.pushReplacement(
-    context, MaterialPageRoute(builder: (context) => const Home()))
+    context, MaterialPageRoute(builder: (context) => const MainTab()))
     );
   }
 }

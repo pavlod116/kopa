@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class AppColors {
@@ -18,9 +17,5 @@ class AppColors {
   static const Color border = Color(0xFFABB4BD);
   static const Color sellerph = Color(0xFF007AFF);
   static const Color container = Color(0xFFE5E5EA);
-
-
-
-
-
+  static const Color text = Color(0xFFE80909);
 }

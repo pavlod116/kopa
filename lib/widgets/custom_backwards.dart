@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
-import 'package:kopa_shop/ui/home/home_screen.dart';
+import 'package:kopa_shop/ui/main_tabs/main_tab.dart';
 
 class Backwards extends BaseStatefulWidget {
   const Backwards({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _BackwardsState extends State<Backwards> {
         child: IconButton(
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const Home()));
+                  MaterialPageRoute(builder: (context) => const MainTab()));
             },
             icon: Image.asset(AppImages.backwards)));
   }

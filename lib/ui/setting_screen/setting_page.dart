@@ -86,7 +86,7 @@ class _SettingState extends State<Setting> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 25, right: 25, top: 40),
+          padding: const EdgeInsets.only(left: 25, right: 25, top: 40, bottom: 20),
           child: GestureDetector(
             onTap: () {
               context.read<FirebaseAuthMethods>().signOut(context);

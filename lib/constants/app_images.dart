@@ -16,4 +16,9 @@ class AppImages {
   static const String bottom = "assets/bottom.png";
   static const String top = "assets/top.png";
   static const String group = "assets/group.png";
+  static const String house = "assets/house.png";
+  static const String history = "assets/history.png";
+  static const String favorite = "assets/favorite.png";
+  static const String settings = "assets/settings.png";
+  static const String add = "assets/add.png";
 }

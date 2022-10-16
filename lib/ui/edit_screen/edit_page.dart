@@ -3,6 +3,7 @@ import 'package:kopa_shop/constants/app_colors.dart';
 import 'package:kopa_shop/constants/app_images.dart';
 import 'package:kopa_shop/constants/app_strings.dart';
 import 'package:kopa_shop/core/widgets/base_stateful_widget.dart';
+import 'package:kopa_shop/widgets/custom_textfield.dart';
 
 class EditPage extends BaseStatefulWidget {
   const EditPage({Key? key}) : super(key: key);
@@ -52,23 +53,7 @@ class _EditState extends State<EditPage> {
                         const Padding(
                           padding:
                               EdgeInsets.only(left: 17, right: 16, top: 21),
-                          child: TextField(
-                            style: TextStyle(color: AppColors.white),
-                            decoration: InputDecoration(
-                              hintStyle: TextStyle(color: AppColors.white),
-                              enabledBorder: UnderlineInputBorder(
-                                  borderSide:
-                                      BorderSide(color: AppColors.border)),
-                              focusedBorder: UnderlineInputBorder(
-                                  borderSide:
-                                      BorderSide(color: AppColors.white)),
-                              focusColor: AppColors.white,
-                              labelStyle: TextStyle(
-                                color: AppColors.white,
-                              ),
-                            ),
-                            cursorColor: AppColors.textPrimary,
-                          ),
+                          child: CustomTextField(),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 32, top: 52),
@@ -92,23 +77,7 @@ class _EditState extends State<EditPage> {
                               minHeight: 1,
                               minWidth: 342,
                             ),
-                            child: const TextField(
-                              style: TextStyle(color: AppColors.white),
-                              decoration: InputDecoration(
-                                hintStyle: TextStyle(color: AppColors.white),
-                                enabledBorder: UnderlineInputBorder(
-                                    borderSide:
-                                        BorderSide(color: AppColors.border)),
-                                focusedBorder: UnderlineInputBorder(
-                                    borderSide:
-                                        BorderSide(color: AppColors.white)),
-                                focusColor: AppColors.white,
-                                labelStyle: TextStyle(
-                                  color: AppColors.white,
-                                ),
-                              ),
-                              cursorColor: AppColors.textPrimary,
-                            ),
+                            child: const CustomTextField(),
                           ),
                         ),
                         Padding(
@@ -135,24 +104,7 @@ class _EditState extends State<EditPage> {
                                   minHeight: 1,
                                   minWidth: 98,
                                 ),
-                                child: const TextField(
-                                  style: TextStyle(color: AppColors.white),
-                                  decoration: InputDecoration(
-                                    hintStyle:
-                                        TextStyle(color: AppColors.white),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                            color: AppColors.border)),
-                                    focusedBorder: UnderlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: AppColors.white)),
-                                    focusColor: AppColors.white,
-                                    labelStyle: TextStyle(
-                                      color: AppColors.white,
-                                    ),
-                                  ),
-                                  cursorColor: AppColors.textPrimary,
-                                ),
+                                child: const CustomTextField(),
                               ),
                             ),
                             Padding(
@@ -163,24 +115,7 @@ class _EditState extends State<EditPage> {
                                   minHeight: 1,
                                   minWidth: 98,
                                 ),
-                                child: const TextField(
-                                  style: TextStyle(color: AppColors.white),
-                                  decoration: InputDecoration(
-                                    hintStyle:
-                                        TextStyle(color: AppColors.white),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                            color: AppColors.border)),
-                                    focusedBorder: UnderlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: AppColors.white)),
-                                    focusColor: AppColors.white,
-                                    labelStyle: TextStyle(
-                                      color: AppColors.white,
-                                    ),
-                                  ),
-                                  cursorColor: AppColors.textPrimary,
-                                ),
+                                child: const CustomTextField(),
                               ),
                             ),
                           ],
@@ -209,24 +144,7 @@ class _EditState extends State<EditPage> {
                                   minHeight: 1,
                                   minWidth: 98,
                                 ),
-                                child: const TextField(
-                                  style: TextStyle(color: AppColors.white),
-                                  decoration: InputDecoration(
-                                    hintStyle:
-                                        TextStyle(color: AppColors.white),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                            color: AppColors.border)),
-                                    focusedBorder: UnderlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: AppColors.white)),
-                                    focusColor: AppColors.white,
-                                    labelStyle: TextStyle(
-                                      color: AppColors.white,
-                                    ),
-                                  ),
-                                  cursorColor: AppColors.textPrimary,
-                                ),
+                                child: const CustomTextField(),
                               ),
                             ),
                             Padding(
@@ -237,24 +155,7 @@ class _EditState extends State<EditPage> {
                                   minHeight: 1,
                                   minWidth: 98,
                                 ),
-                                child: const TextField(
-                                  style: TextStyle(color: AppColors.white),
-                                  decoration: InputDecoration(
-                                    hintStyle:
-                                        TextStyle(color: AppColors.white),
-                                    enabledBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
-                                            color: AppColors.border)),
-                                    focusedBorder: UnderlineInputBorder(
-                                        borderSide:
-                                            BorderSide(color: AppColors.white)),
-                                    focusColor: AppColors.white,
-                                    labelStyle: TextStyle(
-                                      color: AppColors.white,
-                                    ),
-                                  ),
-                                  cursorColor: AppColors.textPrimary,
-                                ),
+                                child: const CustomTextField(),
                               ),
                             ),
                           ],

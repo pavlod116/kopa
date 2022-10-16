@@ -34,4 +34,6 @@ class AppStrings {
   static const String download = "СКИНУТИ";
   static const String sustained = "ЗАСТОСУВАТИ";
   static const String contact = "Контактний номер";
+  static const String photo = "Додайте хоча б одне фото";
+  static const String correct = "Введіть коректну ціну";
 }

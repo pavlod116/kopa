@@ -39,7 +39,8 @@ class _CustomCardState extends State<CustomCard> {
                     ConstrainedBox(
                       constraints:
                           const BoxConstraints(minWidth: 50, minHeight: 50),
-                      child: Image(image: AssetImage('${widget.item.image}'),
+                      child: Image(
+                        image: AssetImage('${widget.item.image}'),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -61,7 +62,7 @@ class _CustomCardState extends State<CustomCard> {
                         padding: EdgeInsets.only(left: 260, top: 10),
                         child: CardPrice()),
                     Padding(
-                      padding: const EdgeInsets.only(left: 151, top: 10),
+                      padding: const EdgeInsets.only(left: 148, top: 10),
                       child: SizedBox(
                         width: 73.91,
                         height: 18.4,
@@ -73,7 +74,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 151, top: 37),
+                      padding: const EdgeInsets.only(left: 148, top: 37),
                       child: SizedBox(
                         width: 72,
                         height: 11.5,
@@ -85,7 +86,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 151, top: 52),
+                      padding: const EdgeInsets.only(left: 148, top: 52),
                       child: SizedBox(
                         width: 28,
                         height: 25,
@@ -97,7 +98,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 197, top: 57),
+                      padding: const EdgeInsets.only(left: 194, top: 57),
                       child: SizedBox(
                         width: 46,
                         height: 16,
@@ -109,7 +110,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 180, top: 80),
+                      padding: const EdgeInsets.only(left: 176, top: 80),
                       child: SizedBox(
                         width: 68,
                         height: 16.1,
@@ -121,7 +122,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 280, top: 57),
+                      padding: const EdgeInsets.only(left: 276, top: 57),
                       child: SizedBox(
                         width: 28,
                         height: 16.1,
@@ -133,7 +134,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 253, top: 81),
+                      padding: const EdgeInsets.only(left: 249, top: 81),
                       child: SizedBox(
                         width: 65,
                         height: 11.5,
@@ -145,7 +146,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 158, top: 82),
+                      padding: const EdgeInsets.only(left: 154, top: 82),
                       child: SizedBox(
                         width: 46,
                         height: 11.5,
@@ -157,7 +158,7 @@ class _CustomCardState extends State<CustomCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 151, top: 103),
+                      padding: const EdgeInsets.only(left: 148, top: 103),
                       child: SizedBox(
                         width: 139,
                         height: 11.5,

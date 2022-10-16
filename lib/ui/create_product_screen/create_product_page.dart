@@ -35,7 +35,7 @@ class _CreateProductPageState extends State<CreateProductPage> {
           const TextProduct(),
           const AddItemWidget(),
           Padding(
-            padding: const EdgeInsets.only(left: 31, bottom: 17, top: 17),
+            padding: const EdgeInsets.only(left: 31,top: 17, bottom: 17),
             child: ConstrainedBox(
               constraints: const BoxConstraints(
                 minWidth: 97,
@@ -49,7 +49,7 @@ class _CreateProductPageState extends State<CreateProductPage> {
           ),
           const SizeChart(),
           Padding(
-            padding: const EdgeInsets.only(left: 31, bottom: 17, top: 17),
+            padding: const EdgeInsets.only(left: 31, top: 17),
             child: ConstrainedBox(
               constraints: const BoxConstraints(
                 minWidth: 97,
@@ -72,7 +72,7 @@ class _CreateProductPageState extends State<CreateProductPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 31, bottom: 17, top: 17),
+            padding: const EdgeInsets.only(left: 31, top: 17),
             child: ConstrainedBox(
               constraints: const BoxConstraints(
                 minWidth: 97,
@@ -95,7 +95,7 @@ class _CreateProductPageState extends State<CreateProductPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 31, bottom: 17, top: 17),
+            padding: const EdgeInsets.only(left: 31, top: 17),
             child: ConstrainedBox(
               constraints: const BoxConstraints(
                 minWidth: 97,
